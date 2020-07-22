@@ -1,4 +1,17 @@
-## 0.4.0 (Unreleased)
+## 0.4.2 (6 February, 2020)
+
+IMPROVEMENTS:
+ * Add pprof Debug API routes for Sherpa server profiling [[GH-124]](https://github.com/jrasell/sherpa/pull/124)
+
+BUG FIXES:
+ * Fix panic when performing autoscaling evaluation using external metrics [[GH-128]](https://github.com/jrasell/sherpa/pull/128)
+
+## 0.4.1 (3 January, 2020)
+
+BUG FIXES:
+ * Fix incorrect searching of allocs causing missed allocations when performing autoscaling evaluations in jobs with a mix of scalable, and non-scable groups [[GH-121]](https://github.com/jrasell/sherpa/pull/121)
+
+## 0.4.0 (20 December, 2019)
 
 IMPROVEMENTS:
  * Scaling policies can now detail any number of external metrics and thresholds to check. The internal autoscaler will perform lookups on each iteration of the external source, to check whether scaling is needed. Currently `prometheus` is supported as an external source [[GH-104]](https://github.com/jrasell/sherpa/pull/104)
